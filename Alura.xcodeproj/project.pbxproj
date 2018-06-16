@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E2E5E4920C1C66B00A23D11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2E5E4820C1C66B00A23D11 /* AppDelegate.swift */; };
+		6E2E5E5020C1C66E00A23D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E2E5E4F20C1C66E00A23D11 /* Assets.xcassets */; };
+		6E2E5E5320C1C66E00A23D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2E5E5120C1C66E00A23D11 /* LaunchScreen.storyboard */; };
+		6E2E5E5E20C1C66F00A23D11 /* AluraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2E5E5D20C1C66F00A23D11 /* AluraTests.swift */; };
+		6E2E5E6920C1C66F00A23D11 /* AluraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2E5E6820C1C66F00A23D11 /* AluraUITests.swift */; };
+		6E3285E820D0A5D900586682 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3285E720D0A5D900586682 /* Meal.swift */; };
+		6E3285EA20D0A63100586682 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3285E920D0A63100586682 /* Item.swift */; };
+		6E66E22720D0AC6B00F057FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E66E22620D0AC6B00F057FE /* ViewController.swift */; };
+		6E66E22920D0B42400F057FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E66E22820D0B42400F057FE /* Main.storyboard */; };
+		6EB5749820D42BA900EE3E47 /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB5749720D42BA900EE3E47 /* MealsTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E2E5E5A20C1C66F00A23D11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E2E5E3D20C1C66B00A23D11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E2E5E4420C1C66B00A23D11;
+			remoteInfo = Alura;
+		};
+		6E2E5E6520C1C66F00A23D11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E2E5E3D20C1C66B00A23D11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E2E5E4420C1C66B00A23D11;
+			remoteInfo = Alura;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E2E5E4520C1C66B00A23D11 /* Alura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alura.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E2E5E4820C1C66B00A23D11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E2E5E4F20C1C66E00A23D11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E2E5E5220C1C66E00A23D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E2E5E5420C1C66E00A23D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E2E5E5920C1C66F00A23D11 /* AluraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AluraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E2E5E5D20C1C66F00A23D11 /* AluraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AluraTests.swift; sourceTree = "<group>"; };
+		6E2E5E5F20C1C66F00A23D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E2E5E6420C1C66F00A23D11 /* AluraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AluraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E2E5E6820C1C66F00A23D11 /* AluraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AluraUITests.swift; sourceTree = "<group>"; };
+		6E2E5E6A20C1C66F00A23D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E3285E720D0A5D900586682 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		6E3285E920D0A63100586682 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		6E66E22620D0AC6B00F057FE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6E66E22820D0B42400F057FE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6EB5749720D42BA900EE3E47 /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E2E5E4220C1C66B00A23D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2E5E5620C1C66F00A23D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2E5E6120C1C66F00A23D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E2E5E3C20C1C66B00A23D11 = {
+			isa = PBXGroup;
+			children = (
+				6E2E5E4720C1C66B00A23D11 /* Alura */,
+				6E2E5E5C20C1C66F00A23D11 /* AluraTests */,
+				6E2E5E6720C1C66F00A23D11 /* AluraUITests */,
+				6E2E5E4620C1C66B00A23D11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E2E5E4620C1C66B00A23D11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E2E5E4520C1C66B00A23D11 /* Alura.app */,
+				6E2E5E5920C1C66F00A23D11 /* AluraTests.xctest */,
+				6E2E5E6420C1C66F00A23D11 /* AluraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E2E5E4720C1C66B00A23D11 /* Alura */ = {
+			isa = PBXGroup;
+			children = (
+				6E3285E620D0A5A400586682 /* model */,
+				6E3285E420D0A5A300586682 /* views */,
+				6E3285E520D0A5A300586682 /* viewsController */,
+				6E2E5E4820C1C66B00A23D11 /* AppDelegate.swift */,
+				6E2E5E4F20C1C66E00A23D11 /* Assets.xcassets */,
+				6E2E5E5120C1C66E00A23D11 /* LaunchScreen.storyboard */,
+				6E2E5E5420C1C66E00A23D11 /* Info.plist */,
+			);
+			path = Alura;
+			sourceTree = "<group>";
+		};
+		6E2E5E5C20C1C66F00A23D11 /* AluraTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E2E5E5D20C1C66F00A23D11 /* AluraTests.swift */,
+				6E2E5E5F20C1C66F00A23D11 /* Info.plist */,
+			);
+			path = AluraTests;
+			sourceTree = "<group>";
+		};
+		6E2E5E6720C1C66F00A23D11 /* AluraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E2E5E6820C1C66F00A23D11 /* AluraUITests.swift */,
+				6E2E5E6A20C1C66F00A23D11 /* Info.plist */,
+			);
+			path = AluraUITests;
+			sourceTree = "<group>";
+		};
+		6E3285E420D0A5A300586682 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				6E66E22820D0B42400F057FE /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		6E3285E520D0A5A300586682 /* viewsController */ = {
+			isa = PBXGroup;
+			children = (
+				6E66E22620D0AC6B00F057FE /* ViewController.swift */,
+				6EB5749720D42BA900EE3E47 /* MealsTableViewController.swift */,
+			);
+			path = viewsController;
+			sourceTree = "<group>";
+		};
+		6E3285E620D0A5A400586682 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6E3285E720D0A5D900586682 /* Meal.swift */,
+				6E3285E920D0A63100586682 /* Item.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E2E5E4420C1C66B00A23D11 /* Alura */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E2E5E6D20C1C66F00A23D11 /* Build configuration list for PBXNativeTarget "Alura" */;
+			buildPhases = (
+				6E2E5E4120C1C66B00A23D11 /* Sources */,
+				6E2E5E4220C1C66B00A23D11 /* Frameworks */,
+				6E2E5E4320C1C66B00A23D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alura;
+			productName = Alura;
+			productReference = 6E2E5E4520C1C66B00A23D11 /* Alura.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E2E5E5820C1C66F00A23D11 /* AluraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E2E5E7020C1C66F00A23D11 /* Build configuration list for PBXNativeTarget "AluraTests" */;
+			buildPhases = (
+				6E2E5E5520C1C66F00A23D11 /* Sources */,
+				6E2E5E5620C1C66F00A23D11 /* Frameworks */,
+				6E2E5E5720C1C66F00A23D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E2E5E5B20C1C66F00A23D11 /* PBXTargetDependency */,
+			);
+			name = AluraTests;
+			productName = AluraTests;
+			productReference = 6E2E5E5920C1C66F00A23D11 /* AluraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E2E5E6320C1C66F00A23D11 /* AluraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E2E5E7320C1C66F00A23D11 /* Build configuration list for PBXNativeTarget "AluraUITests" */;
+			buildPhases = (
+				6E2E5E6020C1C66F00A23D11 /* Sources */,
+				6E2E5E6120C1C66F00A23D11 /* Frameworks */,
+				6E2E5E6220C1C66F00A23D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E2E5E6620C1C66F00A23D11 /* PBXTargetDependency */,
+			);
+			name = AluraUITests;
+			productName = AluraUITests;
+			productReference = 6E2E5E6420C1C66F00A23D11 /* AluraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E2E5E3D20C1C66B00A23D11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Lucas do Nascimento Silva";
+				TargetAttributes = {
+					6E2E5E4420C1C66B00A23D11 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					6E2E5E5820C1C66F00A23D11 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 6E2E5E4420C1C66B00A23D11;
+					};
+					6E2E5E6320C1C66F00A23D11 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 6E2E5E4420C1C66B00A23D11;
+					};
+				};
+			};
+			buildConfigurationList = 6E2E5E4020C1C66B00A23D11 /* Build configuration list for PBXProject "Alura" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E2E5E3C20C1C66B00A23D11;
+			productRefGroup = 6E2E5E4620C1C66B00A23D11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E2E5E4420C1C66B00A23D11 /* Alura */,
+				6E2E5E5820C1C66F00A23D11 /* AluraTests */,
+				6E2E5E6320C1C66F00A23D11 /* AluraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E2E5E4320C1C66B00A23D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E66E22920D0B42400F057FE /* Main.storyboard in Resources */,
+				6E2E5E5320C1C66E00A23D11 /* LaunchScreen.storyboard in Resources */,
+				6E2E5E5020C1C66E00A23D11 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2E5E5720C1C66F00A23D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2E5E6220C1C66F00A23D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E2E5E4120C1C66B00A23D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB5749820D42BA900EE3E47 /* MealsTableViewController.swift in Sources */,
+				6E3285EA20D0A63100586682 /* Item.swift in Sources */,
+				6E3285E820D0A5D900586682 /* Meal.swift in Sources */,
+				6E66E22720D0AC6B00F057FE /* ViewController.swift in Sources */,
+				6E2E5E4920C1C66B00A23D11 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2E5E5520C1C66F00A23D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2E5E5E20C1C66F00A23D11 /* AluraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2E5E6020C1C66F00A23D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2E5E6920C1C66F00A23D11 /* AluraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E2E5E5B20C1C66F00A23D11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E2E5E4420C1C66B00A23D11 /* Alura */;
+			targetProxy = 6E2E5E5A20C1C66F00A23D11 /* PBXContainerItemProxy */;
+		};
+		6E2E5E6620C1C66F00A23D11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E2E5E4420C1C66B00A23D11 /* Alura */;
+			targetProxy = 6E2E5E6520C1C66F00A23D11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E2E5E5120C1C66E00A23D11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E2E5E5220C1C66E00A23D11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E2E5E6B20C1C66F00A23D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E2E5E6C20C1C66F00A23D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E2E5E6E20C1C66F00A23D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Alura/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Curso-Swift-Alura.Alura";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E2E5E6F20C1C66F00A23D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Alura/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Curso-Swift-Alura.Alura";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E2E5E7120C1C66F00A23D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AluraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Curso-Swift-Alura.AluraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alura.app/Alura";
+			};
+			name = Debug;
+		};
+		6E2E5E7220C1C66F00A23D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AluraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Curso-Swift-Alura.AluraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alura.app/Alura";
+			};
+			name = Release;
+		};
+		6E2E5E7420C1C66F00A23D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AluraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Curso-Swift-Alura.AluraUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alura;
+			};
+			name = Debug;
+		};
+		6E2E5E7520C1C66F00A23D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AluraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Curso-Swift-Alura.AluraUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alura;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E2E5E4020C1C66B00A23D11 /* Build configuration list for PBXProject "Alura" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2E5E6B20C1C66F00A23D11 /* Debug */,
+				6E2E5E6C20C1C66F00A23D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E2E5E6D20C1C66F00A23D11 /* Build configuration list for PBXNativeTarget "Alura" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2E5E6E20C1C66F00A23D11 /* Debug */,
+				6E2E5E6F20C1C66F00A23D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E2E5E7020C1C66F00A23D11 /* Build configuration list for PBXNativeTarget "AluraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2E5E7120C1C66F00A23D11 /* Debug */,
+				6E2E5E7220C1C66F00A23D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E2E5E7320C1C66F00A23D11 /* Build configuration list for PBXNativeTarget "AluraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2E5E7420C1C66F00A23D11 /* Debug */,
+				6E2E5E7520C1C66F00A23D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E2E5E3D20C1C66B00A23D11 /* Project object */;
+}
