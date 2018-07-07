@@ -8,9 +8,10 @@
 
 import UIKit
 
-class MealsTableViewController :   UITableViewController{ //HERANCA
+class MealsTableViewController :   UITableViewController, AddMealDelegate{ //HERANCA
     
-    var meals: Array<Meal> = [Meal(nome: "Arroz", alegria: 5), Meal(nome: "Feijao", alegria: 4)]
+    var meals: Array<Meal> = [Meal(nome: "Arroz", alegria: 5, itens:[]),
+                              Meal(nome: "Feijao", alegria: 4, itens:[])]
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return meals.count
@@ -26,9 +27,49 @@ class MealsTableViewController :   UITableViewController{ //HERANCA
         
         cell.textLabel!.text = meal.nome
         
+         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(detalheRefeicao))
+        
+        cell.addGestureRecognizer(longPress)
+        
         return cell
         
     }
     
+    @objc func detalheRefeicao(recognizer: UILongPressGestureRecognizer){
+        if (recognizer.state == UIGestureRecognizerState.began){
+            let cell = recognizer.view as! UITableViewCell
+            
+            if let indexPath = tableView.indexPath(for: cell){
+                let row = indexPath.row
+                let refeicao = meals[row]
+                
+                let details = UIAlertController(title: refeicao.nome, message: refeicao.refeicaoDetalhes(), preferredStyle: UIAlertControllerStyle.alert)
+                
+                let alert = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel , handler: nil)
+                
+                details.addAction(alert)
+                
+                present(details, animated: true, completion: nil)
+            }
+            
+            
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "adicionarRefeicao"){
+            let view:ViewController = segue.destination as! ViewController
+            view.delegate = self
+        }
+    }
+    
+    //Funcao do underline _ (o primeiro parametro da funcao, nao precisa ter o nome explicito quando invoca ela)
+    
+    func addArray(_ meal:Meal){
+    
+        meals.append(meal)
+        tableView.reloadData()
+        
+    }
     
 }

@@ -6,11 +6,12 @@ class Meal {
     
     let nome:String
     let alegria:Int
-    let itens = Array<Item>()
+    let itens: Array<Item>
     
-    init(nome:String, alegria:Int) {
+    init(nome:String, alegria:Int, itens :Array<Item> = []) {
         self.nome = nome
         self.alegria = alegria
+        self.itens = itens
     }
     
     func allCalories() -> Double{
@@ -20,6 +21,16 @@ class Meal {
         }
         
         return total
+        
+    }
+    
+    func refeicaoDetalhes() -> String {
+        var message = "Felicidade \(alegria)"
+        for item in itens{
+            message += "\n Nome: \(item.nomeItem) - Calorias: \(item.caloriasItem)"
+        }
+        
+        return message
         
     }
     
